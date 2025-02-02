@@ -61,7 +61,7 @@ function ChatGuide({ visible, onClose }) {
             response: [chatInput],
           };
 
-      const url = chat ? `http://localhost:5000/chat-guide` : `http://localhost:5000/chat-guide`;
+      const url = chat ? `https://backend-wm1d.onrender.com/chat-guide` : `https://backend-wm1d.onrender.com/chat-guide`;
 
       const response = chat ? await axios.put(url, payload) : await axios.post(url, payload);
 
